@@ -1,0 +1,9 @@
+{
+  "keywords": ["AI", "研究", "SuperAgent"],
+  "telegram": {
+    "bot_token": "123456:ABC-DEFxxxxxxxxxxxx",
+    "chat_id": "123456789"
+  },
+  "notified_entries": {},
+  "title_notifications": {}
+}
