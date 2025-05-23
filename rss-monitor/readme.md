@@ -1,5 +1,5 @@
 [原项目地址](https://github.com/dajie111/nodeseek-userscript/tree/main)
-对原版进行了完善，并封装为Docker，便于部署。
+对原版进行了完善，并封装为Docker，便于部署。  
 新增机器人指令交互模式
 ### 部署
 ```bash
