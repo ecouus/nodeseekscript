@@ -2,9 +2,14 @@
 对原版进行了完善，并封装为Docker，便于部署。  
 新增机器人指令交互模式
 ### 部署
+- 克隆基础配置并拉取镜像
 ```bash
-git clone https://github.com/ecouus/nodeseekscript.git && cd nodeseekscript/rss-monitor && docker pull ecouus/rss-monitor:latest
-
+git clone https://github.com/ecouus/nodeseekscript.git && \
+cd nodeseekscript/rss-monitor && \
+docker pull ecouus/rss-monitor:latest
+```
+- 运行容器并挂载当前目录
+```
 docker run -d \
   --name rss-monitor \
   -v $PWD:/app \
