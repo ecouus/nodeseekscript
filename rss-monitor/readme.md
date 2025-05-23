@@ -21,7 +21,7 @@ https://hub.docker.com/r/ecouus/rss-monitor
 
 ### 部署：
 ```bash
-sudo git clone https://github.com/ecouus/nodeseekscript.git && cd nodeseekscript/rss-monitor && docker pull ecouus/rss-monitor:latest
+git clone https://github.com/ecouus/nodeseekscript.git && cd nodeseekscript/rss-monitor && docker pull ecouus/rss-monitor:latest
 
 docker pull ecouus/rss-monitor:latest
 
