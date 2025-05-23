@@ -5,8 +5,6 @@
 ```bash
 git clone https://github.com/ecouus/nodeseekscript.git && cd nodeseekscript/rss-monitor && docker pull ecouus/rss-monitor:latest
 
-docker pull ecouus/rss-monitor:latest
-
 docker run -d \
   --name rss-monitor \
   -v $PWD:/app \
