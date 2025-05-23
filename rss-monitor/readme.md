@@ -17,7 +17,7 @@ docker run -d \
 ```
 运行后修改config.json文件，替换默认的`bot_token`和`chat_id`
 ```bash
-nano config.json
+nano config.json && docker restart rss-monitor
 ```
 ### 其他
 - 查看日志
