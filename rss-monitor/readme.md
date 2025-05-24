@@ -1,6 +1,4 @@
-[原项目地址](https://github.com/dajie111/nodeseek-userscript/tree/main)  
-对原版进行了完善，并封装为Docker，便于部署。  
-新增机器人指令交互模式
+封装自 [原项目](https://github.com/dajie111/nodeseek-userscript/tree/main)，新增 Telegram 交互支持，部署即用。
 ### 部署
 - 克隆基础配置并拉取镜像
 ```bash
@@ -13,6 +11,8 @@ docker pull ecouus/rss-monitor:latest
 docker run -d \
   --name rss-monitor \
   -v $PWD:/app \
+  --log-opt max-size=10m \
+  --log-opt max-file=3 \
   ecouus/rss-monitor:latest
 ```
 运行后修改config.json文件，替换默认的`bot_token`和`chat_id`
@@ -28,6 +28,15 @@ docker logs rss-monitor
 ```bash
 docker exec -it rss-monitor bash && python rss_monitor.py --daemon
 ```
+
+### Telegram 指令
+
+| 指令         | 功能      |
+| ---------- | ------- |
+| `/add 关键词` | 添加关键词   |
+| `/del 关键词` | 删除关键词   |
+| `/list`    | 查看关键词列表 |
+| `/help`    | 帮助菜单    |
 
 ---
 ### 构件镜像
