@@ -309,7 +309,8 @@ def handle_telegram_commands(config):
             time.sleep(5)
 
 
-def check_rss_feed(config):
+def check_rss_feed():
+    config = load_config()
     """检查网页并匹配关键词"""
     # 确保config字典包含必要的键
     if 'keywords' not in config or not isinstance(config['keywords'], list):
@@ -922,7 +923,7 @@ def monitor_loop():
                 else:
                     reload_counter += 1
 
-                check_rss_feed(config)
+                check_rss_feed()
                 consecutive_errors = 0  # 重置错误计数
                 error_stats['last_success'] = time.time()  # 记录上次成功时间
 
