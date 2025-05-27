@@ -1,5 +1,5 @@
 封装自 [原项目](https://github.com/dajie111/nodeseek-userscript/tree/main)
-- 新增 Telegram 交互支持，部署即用。
+- 新增 Telegram 交互支持，部署即用。  
 **2025.05.27 更新：**
 - 调整抓取间隔至 30–40 秒，降低对 NodeSeek 首页的访问频率
 - 优化访问逻辑：仅首次启动或遭遇 Cloudflare 拦截时访问首页，常规循环直接抓取帖子列表
